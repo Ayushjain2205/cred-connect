@@ -11,7 +11,12 @@ export default function Home() {
       <Button text="Download" type="dark" />
       <br />
       <br />
-      <Card />
+      <Card color="#0909">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sunt
+        libero officiis deleniti error aspernatur, et hic, eos consequatur
+        suscipit eaque tenetur quibusdam in iure. Assumenda esse excepturi
+        maxime quisquam.
+      </Card>
     </div>
   );
 }
