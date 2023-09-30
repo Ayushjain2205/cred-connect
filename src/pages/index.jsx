@@ -5,7 +5,10 @@ export default function Home() {
   return (
     <div className="m-20">
       <h1 className="font-bold">Hello</h1>
-      <Button />
+      <Button text="Download" type="light" />
+      <br />
+      <br />
+      <Button text="Download" type="dark" />
       <br />
       <br />
       <Card />
