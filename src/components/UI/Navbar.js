@@ -8,9 +8,9 @@ const Navbar = () => {
   const router = useRouter();
 
   const navLinks = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" },
+    { path: "/", label: "Explore" },
+    { path: "/social", label: "Social" },
+    { path: "/profile", label: "Profile" },
   ];
 
   const isActive = (path) => router.pathname === path;
