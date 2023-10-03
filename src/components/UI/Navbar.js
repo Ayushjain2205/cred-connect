@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { ConnectWallet } from "@thirdweb-dev/react";
+import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
 import Button from "../base/Button";
 
 const Navbar = () => {
   const router = useRouter();
+  const address = useAddress();
 
   const navLinks = [
     { path: "/", label: "Explore" },
@@ -38,7 +39,13 @@ const Navbar = () => {
         ))}
       </div>
 
-      <div>
+      <div className="flex flex-row gap-[40px] items-center">
+        {address && (
+          <div className="flex flex-row gap-[10px] items-center">
+            <img src="/icons/coin.svg" className="h-[48px]" alt="" />
+            <span className="font-bold text-[32px]">40</span>
+          </div>
+        )}
         <Button>
           <ConnectWallet className="connect-wallet" />
         </Button>
