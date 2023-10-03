@@ -1,5 +1,6 @@
 import React from "react";
 import { ConnectWallet } from "@thirdweb-dev/react";
+import Button from "../base/Button";
 
 const Navbar = () => {
   return (
@@ -25,7 +26,9 @@ const Navbar = () => {
 
       {/* Button on the right */}
       <div>
-        <ConnectWallet />
+        <Button>
+          <ConnectWallet className="connect-wallet" />
+        </Button>
       </div>
     </div>
   );
