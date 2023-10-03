@@ -3,9 +3,9 @@ import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="flex flex-col h-screen">
       <Navbar />
-      <div className="p-[32px]">{children}</div>
+      <div className="px-[32px] flex-grow">{children}</div>
     </div>
   );
 };
