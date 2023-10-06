@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
 import Button from "../base/Button";
+import WalletButton from "../functional/WalletButton";
 
 const Navbar = () => {
   const router = useRouter();
@@ -49,6 +50,8 @@ const Navbar = () => {
         <Button>
           <ConnectWallet className="connect-wallet" />
         </Button>
+
+        {/* <WalletButton /> */}
       </div>
     </div>
   );
